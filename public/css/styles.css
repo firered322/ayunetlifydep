@@ -1,0 +1,503 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.centeralign {
+  text-align: center;
+}
+.navbar {
+  padding: 3% 10%;
+  border: 0;
+}
+.navbar-brand {
+  margin-right: -15px;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.brand-img {
+  width: 28px;
+}
+.navbar-toggler {
+  padding: 3px;
+  margin-left: 15px;
+}
+
+.down-btn {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.hider {
+  display: none;
+}
+
+.navbar-default {
+  background: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: black;
+}
+
+.navbar-brand a {
+  color: rgb(0, 0, 0);
+}
+
+.navbar-brand a:hover {
+  color: #1027ac;
+}
+.navbar-nav li {
+  padding: 0 15px;
+}
+.navbar-nav li a {
+  font-size: 1.5rem;
+}
+.navbar-nav li a:hover {
+  color: #00557f !important;
+}
+
+.footer {
+  padding: 15px 0 10px 0;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-color: #00557f;
+}
+
+.footer p {
+  font-size: 1.1em;
+  color: #fff;
+}
+
+/* HomePage ////////////////////////////////////////////////////////////////////////////////////// HomePage*/
+.homepage {
+  background: url("../health-care.jpg") no-repeat center/cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#landing {
+  padding: 2% 0 15% 0;
+  margin: 5% 0;
+  height: auto;
+}
+#landing h1 {
+  margin: 3% 0;
+}
+.welcome-text {
+  text-align: center;
+  font-size: 2.5em;
+  color: #00557f;
+}
+@media (max-width: 800px) {
+  .welcome-text {
+    padding-top: 35%;
+  }
+}
+#section2 {
+  background: white;
+  height: auto;
+}
+.section-header {
+  font-size: 40px;
+  padding: 2% 0 0 0;
+  text-align: center;
+  color: #00557f;
+}
+.item-desc {
+  text-align: center;
+  font-size: 25px;
+  color: #00557f;
+}
+.section-headerr hr {
+  width: 20%;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 3px;
+}
+
+@media (max-width: 600px) {
+  #section1 {
+    height: 100vh;
+  }
+}
+
+.imageswapper {
+  min-height: 400px;
+}
+
+/* AyuLynk ////////////////////*/
+.ayulynk-showcase {
+  text-align: center;
+  padding: 0 7%;
+}
+.ayulynk-showcase .img1 {
+  margin: 5% 2%;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+.ayulynk-showcase .img2 {
+  padding: 4% 0;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+}
+.feature-boxer {
+  padding: 2% 20% 3% 20%;
+}
+.feature-padder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media (max-width: 990px) {
+  .feature-boxer {
+    padding: 2% 10% 3% 10%;
+  }
+  .blocker {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #00557f;
+    margin-bottom: 20px;
+  }
+  .feature-numero h3,
+  p {
+    text-align: center;
+  }
+  .item-desc {
+    padding: 0 5%;
+  }
+  .section-header {
+    margin-bottom: 20px;
+  }
+}
+.feature-numero {
+  text-align: start;
+  color: #00557f;
+}
+.blocker {
+  display: flex;
+}
+.blocker i {
+  color: #00557f;
+  padding: 0 20px;
+}
+
+.bottom-imgger {
+  width: 300px;
+}
+.top-imgger {
+  width: 150px;
+}
+
+/* Testimonials ////////////////////////*/
+#testimonials {
+  text-align: center;
+  color: #00557f;
+  height: auto;
+  background: rgba(186, 227, 238);
+}
+.testi-section {
+  padding: 4% 0;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+}
+#testimonials ol {
+  margin-top: 50px;
+}
+.testimonial-desig {
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+.funder-img {
+  width: 90px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  color: black;
+}
+
+@media (max-width: 990px) {
+  .testimonial-text {
+    padding: 0 10%;
+  }
+  .testimonial-image {
+    width: 20%;
+  }
+  .testimonial-desig {
+    padding: 0 5%;
+  }
+}
+
+/* Customers ////////////////////*/
+
+#customers {
+  background: white;
+  text-align: center;
+  color: #00557f;
+  height: auto;
+  padding: 2% 7%;
+}
+
+.customer-img {
+  padding: 2% 0;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 0 3%;
+}
+
+.customer-img2 {
+  padding: 4% 0;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 3%;
+}
+
+.customer-img-container img {
+  transition: all 0.2s;
+}
+
+.customer-img-container img:hover {
+  transform: scale(1.3);
+}
+
+/* ContactPage ////////////////////////////////////////////////////////////////////////////////////// ContactPage*/
+.contactpage {
+  height: auto;
+  color: black;
+}
+.contactpage h2 {
+  text-align: center;
+}
+
+.contact-content {
+  padding: 2% 7% 0 7%;
+}
+.contact-content h2 {
+  text-align: center;
+}
+.contact-content h3 {
+  color: #00557f;
+  text-align: center;
+  font-size: 1rem;
+}
+.contact-content h4 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.second-contact {
+  text-align: center;
+}
+.contact-submit {
+  text-align: center;
+}
+.contact-icons {
+  padding: 2% 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact-footer {
+  position: absolute;
+  bottom: 0px;
+  /* position: static; */
+}
+
+@media (max-width: 990px) {
+  .contact-icons {
+    padding: 5% 0;
+  }
+  .contact-footer {
+    position: static;
+  }
+}
+
+@media (max-height: 850px) {
+  .contact-footer {
+    position: static;
+  }
+}
+
+.office-address {
+  padding: 2% 0;
+}
+.contact-leader {
+  border-bottom: 1px solid #00557f;
+}
+/* ProductsPage ////////////////////////////////////////////////////////////////////////////////////// ProductsPage*/
+
+.first3 {
+  text-align: center;
+  margin: 0 0 2% 0;
+}
+.next3 {
+  text-align: center;
+}
+#ayulynk {
+  background: #fff;
+  height: auto;
+}
+#ayulynk .info-container {
+  padding: 3% 0;
+  color: black;
+  margin: 0 7%;
+  background-image: linear-gradient(#77ace1, #b1cfee);
+  margin-bottom: 50px;
+}
+
+#ayulynk p {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+}
+
+#ayulynk h2 {
+  text-align: center;
+  margin: 2% 0;
+}
+
+.ayulynk-img {
+  text-align: center;
+}
+
+.ayulynk-img img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin-bottom: 2%;
+}
+
+@media (max-width: 992px) {
+  #ayulynk {
+    color: #0076b2;
+    text-align: center;
+    background: #e8f7fd;
+  }
+  #ayulynk .heading {
+    line-height: 1;
+    font-size: 2rem;
+  }
+  .middle-container {
+    line-height: 1;
+    font-size: 1.2rem;
+  }
+  #ayulynk .product_details {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+}
+
+/* AyuShare /////////////////////*/
+#ayushare {
+  height: auto;
+  text-align: center;
+}
+#ayushare .info-container {
+  padding: 3% 0;
+  color: black;
+  margin: 0 7%;
+  background-image: linear-gradient(#77ace1, #b1cfee);
+  margin-bottom: 50px;
+}
+
+#ayushare h1 {
+  margin-bottom: 20px;
+}
+
+#ayushare p {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+#ayushare .lead {
+  margin-bottom: 50px;
+}
+
+#ayushare .carousel-item img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+#ayushare .carousel-inner p {
+  text-align: start;
+}
+
+#ayushare .appinfotext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#ayushare #carouselExampleIndicators .row {
+  display: flex;
+  justify-content: center;
+}
+
+/* NewsPage ////////////////////////////////////////////////////////////////////////////////////// NewsPage*/
+.newspage {
+  height: auto;
+}
+.newspage h2 {
+  text-align: center;
+}
+#newsarticles {
+  padding: 2% 12%;
+  text-align: center;
+}
+.newspage hr {
+  width: 20%;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 3px;
+}
+.row1,
+.row2,
+.row3 {
+  padding: 2% 0;
+}
+.articla p {
+  text-align: start;
+  letter-spacing: 2px;
+}
+
+.articla h3 {
+  text-align: start;
+  font-size: 22px;
+  color: #0076b2;
+}
+
+.articla h2 {
+  text-align: start;
+  font-size: 23px;
+}
+#newsarticles .news-article-media {
+  padding: 2% 0 5% 0;
+}
+@media (max-width: 990px) {
+  .articla {
+    border-bottom: 2px solid red;
+    padding: 3% 0;
+  }
+}
+
+.buyprompt {
+  position: absolute;
+  padding: 20px;
+  right: 7%;
+  display: none;
+}
+.buyprompt a {
+  color: black;
+}
