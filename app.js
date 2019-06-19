@@ -35,6 +35,9 @@ app.get("/contact", (req, res) => {
 app.get("/news", (req, res) => {
   res.sendFile(__dirname + "/news.html");
 });
+app.get("/blog", (req, res) => {
+  res.sendFile(__dirname + "/blog.html");
+});
 app.get("/response", (req, res) => {
   res.sendFile(__dirname + "/response.html");
 });

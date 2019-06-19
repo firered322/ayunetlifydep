@@ -509,6 +509,7 @@ nav .navbar-nav li a {
 }
 
 .buyprompt {
+  z-index: 1000;
   position: absolute;
   padding: 20px;
   right: 7%;
@@ -516,4 +517,30 @@ nav .navbar-nav li a {
 }
 .buyprompt a {
   color: black;
+}
+
+/* Blog ////////////////////////////  /////////////////////////////*/
+.bloghome {
+  height: auto;
+}
+
+.blog-header {
+  height: 400px;
+  background: #3498db;
+}
+
+.blog-header-holder {
+  padding-top: 20%;
+  opacity: 0.6;
+  height: 100%;
+  background: url("../blogheader.jpg") no-repeat center;
+  background-attachment: fixed;
+}
+
+.blog-content {
+  margin: 2% 0;
+}
+
+.blog-content-holder {
+  padding: 0 10%;
 }
