@@ -263,7 +263,6 @@
       var fixmeTop = $(".info-container").offset().top;
       $(window).scroll(function() {
         var currentScroll = $(window).scrollTop();
-        console.log(fixmeTop);
         if (currentScroll >= fixmeTop) {
           $(".buyprompt").css({
             display: "initial"

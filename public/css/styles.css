@@ -15,7 +15,7 @@
 }
 .navbar-brand {
   margin-right: -15px;
-  font-size: 2.2rem;
+  font-size: 38px;
   font-weight: bold;
 }
 .brand-img {
@@ -53,10 +53,13 @@
   padding: 0 15px;
 }
 .navbar-nav li a {
-  font-size: 1.5rem;
+  font-size: 25px;
+}
+nav .navbar-nav li a {
+  color: rgba(0, 85, 127, 1) !important;
 }
 .navbar-nav li a:hover {
-  color: #00557f !important;
+  color: rgba(0, 85, 127, 0.7) !important;
 }
 
 .footer {
@@ -89,18 +92,21 @@
 }
 .welcome-text {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 45px;
   color: #00557f;
 }
 @media (max-width: 800px) {
   .welcome-text {
     padding-top: 35%;
+    font-size: 40px;
   }
 }
+
 #section2 {
-  background: white;
+  background: #fafafa;
   height: auto;
 }
+
 .section-header {
   font-size: 40px;
   padding: 2% 0 0 0;
@@ -108,6 +114,7 @@
   color: #00557f;
 }
 .item-desc {
+  margin-top: 20px;
   text-align: center;
   font-size: 25px;
   color: #00557f;
@@ -126,22 +133,24 @@
 }
 
 .imageswapper {
-  min-height: 400px;
+}
+.image-box-swap {
+  min-height: 450px;
 }
 
 /* AyuLynk ////////////////////*/
 .ayulynk-showcase {
   text-align: center;
-  padding: 0 7%;
+  padding: 15% 7%;
 }
 .ayulynk-showcase .img1 {
-  margin: 5% 2%;
+  /* margin: 5% 2%; */
   width: 100%;
   max-width: 700px;
   height: auto;
 }
 .ayulynk-showcase .img2 {
-  padding: 4% 0;
+  /* padding: 4% 0; */
   width: 100%;
   max-width: 380px;
   height: auto;
@@ -188,10 +197,17 @@
 }
 
 .bottom-imgger {
+  height: auto;
   width: 300px;
 }
 .top-imgger {
-  width: 150px;
+  height: auto;
+  width: 500px;
+}
+@media (max-width: 800px) {
+  .top-imgger {
+    width: 350px;
+  }
 }
 
 /* Testimonials ////////////////////////*/
