@@ -38,11 +38,26 @@ app.get("/news", (req, res) => {
 app.get("/blog", (req, res) => {
   res.sendFile(__dirname + "/blog.html");
 });
+app.get("/art1", (req, res) => {
+  res.sendFile(__dirname + "/art1.html");
+});
+app.get("/art2", (req, res) => {
+  res.sendFile(__dirname + "/art2.html");
+});
+app.get("/art3", (req, res) => {
+  res.sendFile(__dirname + "/art3.html");
+});
 app.get("/response", (req, res) => {
   res.sendFile(__dirname + "/response.html");
 });
 app.get("/success", (req, res) => {
   res.sendFile(__dirname + "/success.html");
+});
+app.get("/aboutus", (req, res) => {
+  res.sendFile(__dirname + "/aboutus.html");
+});
+app.get("/privacypolicy", (req, res) => {
+  res.sendFile(__dirname + "/privacypolicy.html");
 });
 
 app.post("/contact", (req, res) => {

@@ -24,6 +24,42 @@
 
       gtag("config", "UA-137433108-1");
     </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "3744816998877800");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=3744816998877800&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -42,12 +78,12 @@
     <div class="homepage">
       <div id="section1">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <img
-            src="./public/log.png"
-            class="brand-img"
-            alt="Ayu Devices Logo"
-          />
-          <a class="navbar-brand" href="/"> Ayu Devices</a>
+          <a class="navbar-brand" href="/"
+            ><img
+              src="./public/Logo_with_tl.png"
+              class="brand-img"
+              alt="Ayu Devices Logo"
+          /></a>
 
           <!-- Triple burger button -->
           <button
@@ -66,6 +102,9 @@
             data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft"
           >
             <ul class="nav navbar-nav ml-auto">
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="/aboutus">About Us</a>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="/products">Products</a>
               </li>
@@ -87,7 +126,7 @@
           <div style="text-align: center;">
             <div class="down-btn">
               <a href="#section2" class="home-down-arrow-1"
-                ><img src="./public/expand-button.svg" style="width: 50px;"
+                ><img src="./public/expand-button.svg" class="down-arrr"
               /></a>
             </div>
           </div>
@@ -113,7 +152,7 @@
               <h3>
                 Noise Reduction and Amplification
               </h3>
-              <p>
+              <p class="ptextpadding">
                 AyuLynk provides ambient noise reduction and high fidelity
                 amplification of sounds.
               </p>
@@ -126,7 +165,7 @@
               <h3>
                 Sound Recording and Sharing
               </h3>
-              <p>
+              <p class="ptextpadding">
                 Detailed sound recordings are made and are available for experts
                 for verification.
               </p>
@@ -138,7 +177,7 @@
               <h3>
                 Data Storage and Analysis
               </h3>
-              <p>
+              <p class="ptextpadding">
                 The recordings are stored securely in cloud database and can be
                 analysed by AI for their accuracy.
               </p>
@@ -151,7 +190,7 @@
       </div>
       <div class="down-btn">
         <a href="#testimonials" class="home-down-arrow-1"
-          ><img src="./public/expand-button.svg" style="width: 50px;"
+          ><img src="./public/expand-button.svg" class="down-arrr"
         /></a>
       </div>
     </div>
@@ -233,7 +272,7 @@
               role="button"
               data-slide="prev"
             >
-              <i class="fas fa-chevron-left fa-3x gocarouselnav"></i>
+              <i class="fas fa-chevron-left fa-3x gocarouselnav sidenavbtn"></i>
             </a>
             <a
               class="carousel-control-next"
@@ -241,7 +280,9 @@
               role="button"
               data-slide="next"
             >
-              <i class="fas fa-chevron-right fa-3x gocarouselnav"></i>
+              <i
+                class="fas fa-chevron-right fa-3x gocarouselnav sidenavbtn"
+              ></i>
             </a>
           </div>
         </div>

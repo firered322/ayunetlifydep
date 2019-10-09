@@ -24,6 +24,42 @@
 
       gtag("config", "UA-137433108-1");
     </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "3744816998877800");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=3744816998877800&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -38,11 +74,18 @@
     />
     <link rel="stylesheet" href="./public/css/styles.css" />
   </head>
+  <script>
+    fbq("track", "Interested");
+  </script>
   <body style="overflow-x: hidden;">
     <div class="contactpage">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <img src="./public/log.png" class="brand-img" alt="" />
-        <a class="navbar-brand" href="/"> Ayu Devices</a>
+        <a class="navbar-brand" href="/"
+          ><img
+            src="./public/Logo_with_tl.png"
+            class="brand-img"
+            alt="Ayu Devices Logo"
+        /></a>
 
         <!-- Triple burger button -->
         <button
@@ -64,11 +107,17 @@
           data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft"
         >
           <ul class="nav navbar-nav ml-auto">
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="/aboutus">About Us</a>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="/products">Products</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/contact">Contact Us</a>
@@ -144,9 +193,23 @@
           </div>
 
           <div class="contact-submit">
-            <button type="submit" class="btn btn-primary" name="button">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              name="button"
+              id="contactButtonz"
+            >
               Submit
             </button>
+            <script type="text/javascript">
+              document.getElementById("contactButtonz").addEventListener(
+                "click",
+                function() {
+                  fbq("track", "Lead");
+                },
+                false
+              );
+            </script>
           </div>
         </form>
         <div class="contact-icons">

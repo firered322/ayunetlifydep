@@ -24,6 +24,42 @@
 
       gtag("config", "UA-137433108-1");
     </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "3744816998877800");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=3744816998877800&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -41,8 +77,12 @@
   <body>
     <div class="bloghome">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <img src="./public/log.png" class="brand-img" alt="Ayu Devices Logo" />
-        <a class="navbar-brand" href="/"> Ayu Devices</a>
+        <a class="navbar-brand" href="/"
+          ><img
+            src="./public/Logo_with_tl.png"
+            class="brand-img"
+            alt="Ayu Devices Logo"
+        /></a>
 
         <!-- Triple burger button -->
         <button
@@ -61,6 +101,9 @@
           data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft"
         >
           <ul class="nav navbar-nav ml-auto">
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="/aboutus">About Us</a>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="/products">Products</a>
             </li>
@@ -85,48 +128,88 @@
         <div class="blog-content-holder">
           <div class="row">
             <div class="col-lg-6">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="./public/blog1.jpg"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Blog title</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Saepe doloribus voluptate eaque a sunt minima hic tenetur
-                    minus obcaecati facilis magni repudiandae vero, recusandae
-                    omnis quod fuga voluptas quasi. Vitae? Lorem, ipsum dolor
-                    sit amet consectetur adipisicing elit. Provident asperiores
-                    quibusdam rerum ut. Harum maxime animi cupiditate. Ad
-                    assumenda omnis natus, nulla iure nam quam id nemo quia
-                    magnam numquam.
-                  </p>
-                  <a href="#" class="btn btn-primary">Read Article</a>
+              <div class="text-center">
+                <div class="card">
+                  <img
+                    class="card-img-top blog-title-img"
+                    src="./public/stethbp1.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      What are the important factors of Digital stethoscope to
+                      consider before purchasing?
+                    </h5>
+                    <p class="card-text">
+                      Technology in medicine has evolved. As a doctor you have
+                      evolved. There are many devices you have accepted along
+                      the journey of medical evolution. But one thing that
+                      remained same is your stethoscope. It’s time to adopt new
+                      age digital stethoscope. This high-end screening tool or
+                      auscultation device helps in the detection of early-stage
+                      congenital heart diseases and lung diseases. Ayu devices
+                      is a leading electronic stethoscope inventor in India. We
+                      present the digital stethoscope purchasing guide:
+                    </p>
+                    <a href="/art1" class="btn btn-primary">Read Article</a>
+                  </div>
                 </div>
               </div>
             </div>
+
             <div class="col-lg-6">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="./public/blog2.jpg"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Blog title</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Reiciendis animi nam natus est tempora voluptatum, optio
-                    aperiam magni autem odit nobis, accusantium amet, odio ut
-                    harum? Voluptas tenetur vitae ex! Lorem ipsum dolor sit,
-                    amet consectetur adipisicing elit. A excepturi autem nisi
-                    maxime, inventore tempore repellendus sit aut. Quisquam
-                    incidunt fugit veniam qui voluptatibus. Corporis assumenda
-                    esse saepe cumque eligendi.
-                  </p>
-                  <a href="#" class="btn btn-primary">Read Article</a>
+              <div class="text-center">
+                <div class="card">
+                  <img
+                    class="card-img-top blog-title-img"
+                    src="./public/steth2sides.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Why Does a Stethoscope Have Two Sides?
+                    </h5>
+                    <p class="card-text">
+                      As a doctor, your stethoscope is your main tool. Right
+                      from your college days, you are taught how essential your
+                      diagnosis using the simple stethoscope is. However, not
+                      many people know or remember that the stethoscope has 7
+                      parts. Surprised? Well, it does! What is more surprising
+                      to most doctors is the fact that most stethoscopes have
+                      two sides that can be used to listen to the sounds in the
+                      chest.
+                    </p>
+                    <a href="/art2" class="btn btn-primary">Read Article</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="text-center">
+                <div class="card">
+                  <img
+                    class="card-img-top blog-title-img"
+                    src="./public/stethsounds.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      How Does a Stethoscope Make Sounds Louder?
+                    </h5>
+                    <p class="card-text">
+                      As a doctor, you are aware that the stethoscope is an
+                      indispensable tool in medicine. It amplifies sounds
+                      produced inside the chest and abdomen, and helps you
+                      diagnose abnormalities such as heart murmurs. However, do
+                      you know how a stethoscope does this? How does a
+                      stethoscope make sounds louder?
+                    </p>
+                    <a href="/art3" class="btn btn-primary">Read Article</a>
+                  </div>
                 </div>
               </div>
             </div>
