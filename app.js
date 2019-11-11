@@ -4,7 +4,7 @@ var favicon = require("serve-favicon");
 var path = require("path");
 var firebase = require("firebase");
 const app = express();
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.use(favicon(path.join(__dirname, "public", "images", "favicon.ico")));
 
@@ -22,43 +22,26 @@ firebase.initializeApp(config);
 // Get ref to firebase DB
 var database = firebase.database();
 
-app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
-});
+app.get("/", (req, res) => { res.sendFile(__dirname + "/index.html"); });
 app.get("/products", (req, res) => {
   // res.render("products");
   res.sendFile(__dirname + "/products.html");
 });
-app.get("/contact", (req, res) => {
-  res.sendFile(__dirname + "/contact.html");
-});
-app.get("/news", (req, res) => {
-  res.sendFile(__dirname + "/news.html");
-});
-app.get("/blog", (req, res) => {
-  res.sendFile(__dirname + "/blog.html");
-});
-app.get("/art1", (req, res) => {
-  res.sendFile(__dirname + "/art1.html");
-});
-app.get("/art2", (req, res) => {
-  res.sendFile(__dirname + "/art2.html");
-});
-app.get("/art3", (req, res) => {
-  res.sendFile(__dirname + "/art3.html");
-});
-app.get("/response", (req, res) => {
-  res.sendFile(__dirname + "/response.html");
-});
-app.get("/success", (req, res) => {
-  res.sendFile(__dirname + "/success.html");
-});
-app.get("/aboutus", (req, res) => {
-  res.sendFile(__dirname + "/aboutus.html");
-});
-app.get("/privacypolicy", (req, res) => {
-  res.sendFile(__dirname + "/privacypolicy.html");
-});
+app.get("/contact",
+        (req, res) => { res.sendFile(__dirname + "/contact.html"); });
+app.get("/news", (req, res) => { res.sendFile(__dirname + "/news.html"); });
+app.get("/blog", (req, res) => { res.sendFile(__dirname + "/blog.html"); });
+app.get("/art1", (req, res) => { res.sendFile(__dirname + "/art1.html"); });
+app.get("/art2", (req, res) => { res.sendFile(__dirname + "/art2.html"); });
+app.get("/art3", (req, res) => { res.sendFile(__dirname + "/art3.html"); });
+app.get("/response",
+        (req, res) => { res.sendFile(__dirname + "/response.html"); });
+app.get("/success",
+        (req, res) => { res.sendFile(__dirname + "/success.html"); });
+app.get("/aboutus",
+        (req, res) => { res.sendFile(__dirname + "/aboutus.html"); });
+app.get("/privacypolicy",
+        (req, res) => { res.sendFile(__dirname + "/privacypolicy.html"); });
 
 app.post("/contact", (req, res) => {
   let name = req.body.name;
@@ -67,15 +50,15 @@ app.post("/contact", (req, res) => {
   let message = req.body.message;
   let findus = req.body.findus;
   let key = email.split(".")[0];
-  database.ref(`/users/${key}`).set({
-    name: name,
-    phone: contact,
-    email: email,
-    message: message,
-    foundusthrough: findus
-  });
+  database.ref(`/users/${key}`)
+      .set({
+        name: name,
+        phone: contact,
+        email: email,
+        message: message,
+        foundusthrough: findus
+      });
 });
 
-app.listen(process.env.PORT || 3000, function() {
-  console.log("Server started on port 3000");
-});
+app.listen(process.env.PORT || 3000,
+           function() { console.log("Server started on port 3000"); });

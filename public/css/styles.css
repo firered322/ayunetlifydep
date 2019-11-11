@@ -649,3 +649,8 @@ nav .navbar-nav li a {
   letter-spacing: 1px;
   font-weight: 700;
 }
+.news-article-media-logo-holder{
+  height: 352px;
+  display: flex;
+  align-items: center;
+}
