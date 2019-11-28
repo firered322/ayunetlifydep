@@ -525,6 +525,10 @@ nav .navbar-nav li a {
   audio {
     max-width: 250px;
   }
+  #section-showcase-img img {
+    width: 100%;
+    max-width: 100px;
+  }
 }
 
 /* NewsPage ////////////////////////////////////////////////////////////////////////////////////// NewsPage*/
@@ -681,7 +685,7 @@ nav .navbar-nav li a {
   text-align: center;
 }
 #section-showcase-img img {
-  width: 40%;
+  width: 100%;
   height: auto;
-  min-width: 400px;
+  max-width: 400px;
 }
